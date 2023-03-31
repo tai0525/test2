@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Noto+Sans+TC:wght@400;700&family=Permanent+Marker&display=swap");
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.navbarScroll.navbarDark {
+  background-color: brown;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-family: "Permanent Marker", cursive;
+  text-transform: uppercase;
+  color: #31525b;
+  height: 50px;
+}
+
+.banner {
+  height: 100vh;
+  background: radial-gradient( circle farthest-corner at 8.4% 11.1%, rgba(185,209,249,1) 3.4%, rgba(180,255,252,1) 49.1%, rgba(180,251,215,1) 90% );
+  background-size: 300% 300%;
+  -webkit-animation: Background 25s ease infinite;
+  -moz-animation: Background 25s ease infinite;
+  animation: Background 25s ease infinite;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+@-webkit-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+/* .background-animation {
+  
+} */
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #FFF ;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+.logo {
+  animation: moveInTop 3.0s ease-out ;
+  animation-fill-mode: backwards;
+}
+
+.title {
+  animation: moveInLeft 3.0s ease-out;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  animation: moveInRight 3.0s ease-out;
+}
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(30, 172, 182);
+  overflow: hidden;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.profile {
+  border-radius: 60%;
+  max-width: 60%;
+}
+
+form textarea {
+  resize: none;
+}
+
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.fa-envelope:hover,
+.fa-codepen:hover,
+.fa-github:hover,
+.fa-linkedin:hover {
+  color: #fff000;
+}
+
+.fas,
+.fab {
+  color: rgb(121, 226, 118);
+}
+
+#footer {
+  background-color: darkgray;
+  text-align: center;
+}

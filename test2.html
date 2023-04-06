@@ -49,6 +49,7 @@
             <div class="cube"></div>
             <div class="cube"></div>
           </div>
+
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner-text">
             <div class="text-center mx-2">
               <img src="./logo/logo.png" class="logo py-3"  alt="logo">
@@ -61,14 +62,13 @@
       </div>
     </section>
 
+        <!-- about -->
     <section id="about">
-    <div class="bgimg-2 mt-4">
+    <div class="bgimg-1 mt-4">
       <div class="caption">
         <span class="border" style="background-color:transparent;font-size:25px;color: #291e1e;">About Me</span>
       </div>
     </div>
-
-    <!-- about -->
 
       <div class="container py-4">
         <!-- <h1 class="text-center">About Me</h1> -->
@@ -89,6 +89,7 @@
       </div>
     </section>
 
+        <!-- portfolio -->
     <section id="portfolio">
     <div class="bgimg-2">
       <div class="caption">
@@ -96,64 +97,72 @@
       </div>
     </div>
 
-    <!-- portfolio -->
- 
       <div class="container py-4">
         <!-- <h1 class="text-center">Portfolio</h1> -->
-        <div class="row">
-          <div class="col-lg-4 mt-4">
+        <!-- <div class="row"> -->
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+          loop="true">
+          <swiper-slide>
             <div class="card">
               <img src="./thumbnail/mondayblues.png" class="card-img-top"  alt="">
               <div class="card-body">
-                <h4 class="card-title">123</h4>
+                <h4 class="card-title">slide-1</h4>
                 <p class="card-text">圖文演唱會，上市推坑大魔王，看了上述病毒，第二發生，自身影。</p>
                 <div class="text-center">
-                  <a href="" class="btn btn-info">Link</a>
+                  <a href="" class="btn btn-info mb-4">Link</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 mt-4">
+          </swiper-slide>
+          <swiper-slide>
             <div class="card">
               <img src="./thumbnail/mondayblues.png" class="card-img-top"  alt="">
               <div class="card-body">
-                <h4 class="card-title">123</h4>
+                <h4 class="card-title">slide-2</h4>
                 <p class="card-text">圖文演唱會，上市推坑大魔王，看了上述病毒，第二發生，自身影。</p>
                 <div class="text-center">
-                  <a href="" class="btn btn-info">Link</a>
+                  <a href="" class="btn btn-info mb-4">Link</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 mt-4">
+          </swiper-slide>
+          <swiper-slide>
             <div class="card">
               <img src="./thumbnail/mondayblues.png" class="card-img-top"  alt="">
               <div class="card-body">
-                <h4 class="card-title">123</h4>
+                <h4 class="card-title">slide-3</h4>
                 <p class="card-text">圖文演唱會，上市推坑大魔王，看了上述病毒，第二發生，自身影。</p>
                 <div class="text-center">
-                  <a href="" class="btn btn-info">Link</a>
+                  <a href="" class="btn btn-info mb-4">Link</a>
                 </div>
               </div>
             </div>
-          </div>
-          </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <img src="./thumbnail/mondayblues.png" class="card-img-top"  alt="">
+              <div class="card-body">
+                <h4 class="card-title">slide-4</h4>
+                <p class="card-text">圖文演唱會，上市推坑大魔王，看了上述病毒，第二發生，自身影。</p>
+                <div class="text-center">
+                  <a href="" class="btn btn-info mb-4">Link</a>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          </swiper-container>
+          <!-- </div> -->
       </div>
     </section>
     
     <section id="contact">
-    <div class="bgimg-2">
+    <div class="bgimg-3">
       <div class="caption">
         <span class="border" style="background-color:transparent;font-size:25px;color: #291e1e;">Contact Me</span>
       </div>
     </div>
-      </div>
-    </div>
-
     
       <div class="container py-4">
-        <!-- <h1 class="text-center">Contact Me</h1> -->
-
         <div class="row">
           <div class="col-lg-12">
             <form>
@@ -184,7 +193,7 @@
               <a href="" target="_blank"><i class="fab fa-linkedin px-2"></i></a>
             </div>
             <span class="text-center text-white m-3">
-              Copyright © 2023 by Pat Tai.All Rights Reserved.
+              Copyright © 2023 by Pat Tai. All Rights Reserved.
             </span>
           </div>
         </footer>
@@ -194,6 +203,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   <script src="./test2.js"></script>
 </body>
 </html>

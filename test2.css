@@ -15,12 +15,17 @@ h1 {
   font-family: "Permanent Marker", cursive;
   text-transform: uppercase;
   color: #31525b;
-  /* height: 40px; */
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .banner {
   height: 100vh;
-  background: radial-gradient( circle farthest-corner at 8.4% 11.1%, rgba(185,209,249,1) 3.4%, rgba(180,255,252,1) 49.1%, rgba(180,251,215,1) 90% );
+  background-image: linear-gradient( 109.5deg,  rgba(229,233,177,1) 11.2%, rgba(223,205,187,1) 100.2% );
   background-size: 300% 300%;
   -webkit-animation: Background 25s ease infinite;
   -moz-animation: Background 25s ease infinite;
@@ -140,7 +145,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(30, 172, 182);
+  color: #31525b;
   overflow: hidden;
 }
 
@@ -215,18 +220,33 @@ h1 {
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 40%;
   width: 100%;
   text-align: center;
-  color: #000;
 }
 
-.caption span.border {
-  background-color: #111;
-  color: #fff;
+.caption span {
   padding: 18px;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 600;
   letter-spacing: 10px;
+  color: #291e1e;
+}
+
+/* button */
+.td-btn {
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.outline.green {
+  border-color: #291e1e;
+  color: #291e1e;
+}
+.outline.green:focus,
+.outline.green:hover {
+  background-color: #291e1e;
+  color: #fffefd;
 }
 
 swiper-container {
@@ -264,19 +284,19 @@ form textarea {
   cursor: pointer;
 }
 
+.fas,
+.fab {
+  color: #291e1e;
+}
+
 .fa-envelope:hover,
 .fa-codepen:hover,
 .fa-github:hover,
 .fa-linkedin:hover {
-  color: #fff000;
-}
-
-.fas,
-.fab {
-  color: rgb(121, 226, 118);
+  color: #f5f4f0;
 }
 
 #footer {
-  background-color: darkgray;
+  background-color: rgb(175, 174, 174);
   text-align: center;
 }
